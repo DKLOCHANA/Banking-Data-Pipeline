@@ -545,3 +545,36 @@ File Path                                    PID    Runtime      # DAGs    # Err
 -------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
 /opt/airflow/dags/minio_to_snowflake_dag.py                           1           0  0.87s           2025-11-22T20:49:49
 ================================================================================
+[2025-11-23T15:00:56.901+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-11-23T15:00:56.903+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-11-23T15:00:56.904+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-11-23T15:00:56.905+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-23T15:00:56.923+0000] {manager.py:740} INFO - There are 1 files in /opt/airflow/dags
+[2025-11-23T15:00:57.923+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/minio_to_snowflake_dag.py     25  0.11s             0           0
+================================================================================
+[2025-11-23T15:01:28.527+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/minio_to_snowflake_dag.py     25  30.72s            0           0
+================================================================================
+[2025-11-23T15:01:28.925+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/minio_to_snowflake_dag.py exited with return code 1.
+[2025-11-23T14:25:39.458+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minio_to_snowflake_dag.py                           0          -1  31.11s          2025-11-23T15:01:28
+================================================================================
+[2025-11-23T15:02:08.231+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-11-23T15:02:08.231+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-11-23T15:02:09.056+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
